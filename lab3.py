@@ -9,8 +9,8 @@ t_fin = 10
 t = np.linspace(0, t_fin, 1000)
 
 m1 = 20
-m2 = 20
-r = 1
+m2 = 5
+r = 0.4
 g = 9.81
 
 def odesys(y, t, m1, m2, r, g):
@@ -32,7 +32,7 @@ def odesys(y, t, m1, m2, r, g):
     return dy
 
 s0 = 0
-phi0 = 1
+phi0 = 0
 ds0 = 0
 dphi0 = 2
 y0 = [s0, phi0, ds0, dphi0]
